@@ -21,6 +21,7 @@ public class LoginInterceptorHandler implements HandlerInterceptor {
             System.out.println("host-fix------test");
             request.setAttribute("msg","请先进行登录操作！");
             System.out.println("master----test");
+            System.out.println("111111");
             request.getRequestDispatcher("/").forward(request,response);
             return false;
         }
