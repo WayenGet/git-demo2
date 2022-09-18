@@ -18,6 +18,7 @@ public class LoginInterceptorHandler implements HandlerInterceptor {
         if(StringUtils.isEmpty(username)){
             System.out.println("username = " + username+"1111");
             //如果是直接访问主页的，则不通过,并跳转到登录页面
+            System.out.println("host-fix------test");
             request.setAttribute("msg","请先进行登录操作！");
             System.out.println("master----test");
             request.getRequestDispatcher("/").forward(request,response);
