@@ -17,7 +17,7 @@ public class YearController {
     public String getYear(String yearPrint, Model model){
         int yearPrintInt = Integer.parseInt(yearPrint);
         if((yearPrintInt%100 != 0 || yearPrintInt % 4==0) && yearPrintInt % 400 == 0){
-            system.out.println("小明");
+            System.out.println("小明");
             model.addAttribute("show","闰年");
         }else{
             model.addAttribute("show","平年");
