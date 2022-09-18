@@ -16,7 +16,7 @@ public class LoginInterceptorHandler implements HandlerInterceptor {
         Object username = request.getSession().getAttribute("username");
         //如果是已经登录的用户则放行，否则直接访问的不通过
         if(StringUtils.isEmpty(username)){
-            System.out.println("username = " + username);
+            System.out.println("username = " + username+"1111");
             //如果是直接访问主页的，则不通过,并跳转到登录页面
             request.setAttribute("msg","请先进行登录操作！");
             request.getRequestDispatcher("/").forward(request,response);
