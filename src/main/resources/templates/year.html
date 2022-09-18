@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form th:action="@{/isYear}">
+        <input name="yearPrint" placeholder="请输入年份"/>
+        <button type="submit">提交</button>
+    </form>
+    <div>[[${show}]]</div>
+</body>
+</html>

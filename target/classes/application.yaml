@@ -1,0 +1,9 @@
+server:
+  servlet:
+    context-path: /crud
+
+spring:
+  messages:
+    basename: i18n/login
+  thymeleaf:
+    cache: false
